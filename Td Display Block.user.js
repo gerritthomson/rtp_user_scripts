@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        http://*/*
+// @match        https://estore.skifalls.com.au/WebAdmin/instructorTools/*
 // @grant        none
 // ==/UserScript==
 
@@ -13,4 +13,7 @@
 
     // Your code here...
     $('td').css('display','block');
+    $('table').css('width','99%');
+    $('td').css('width','99%');
+    $('td').css('font-size','large');
 })();
