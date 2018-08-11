@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Td Display Block
 // @namespace    http://gerrit.com.au/
-// @version      0.2
+// @version      0.3
 // @description  try to take over the world!
 // @author       You
 // @match        https://estore.skifalls.com.au/WebAdmin/instructorTools/*
@@ -13,7 +13,11 @@
 
     // Your code here...
     $('td').css('display','block');
-    $('table').css('width','99%');
-    $('td').css('width','99%');
-    $('td').css('font-size','large');
+    $('table').removeProp('width');
+    $('td').removeProp('width');
+    $('td').css('line-height','1em');
+    $('td').css('font-size','2em');
+    $('td').removeProp('align');
+    $('a').css({"font-size":'1em','line-height':'1em'});
+    $('table[border=1]').prop('border','5')
 })();
